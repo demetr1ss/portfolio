@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Vela Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/VelaSans-Regular.woff2") format("woff2"), url("../fonts/VelaSans-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vela Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/VelaSans-SemiBold.woff2") format("woff2"), url("../fonts/VelaSans-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Craftwork";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/CraftworkGrotesk-Medium.woff2") format("woff2"),
+    url("../fonts/CraftworkGrotesk-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Craftwork";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/CraftworkGrotesk-SemiBold.woff2") format("woff2"),
+    url("../fonts/CraftworkGrotesk-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Craftwork";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/CraftworkGrotesk-Heavy.woff2") format("woff2"),
+    url("../fonts/CraftworkGrotesk-Heavy.woff") format("woff");
+  font-display: swap;
+}

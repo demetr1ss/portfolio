@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  --page-min-width: 320px;
+
+  margin: 0;
+  padding: 0;
+  min-width: var(--page-min-width);
+  min-height: var(--screen-height, 100vh);
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  font-family: $ff-vela-sans;
+  color: $color-default-white;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: $color-default-black;
+  overflow-wrap: break-word;
+  -webkit-tap-highlight-color: $color-transparent;
+}
+
+a {
+  color: $color-default-white;
+  text-decoration: none;
+}
