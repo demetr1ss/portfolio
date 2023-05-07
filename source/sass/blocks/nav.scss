@@ -17,8 +17,8 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: -1px;
-    height: 1px;
+    bottom: -2px;
+    height: 2px;
     width: 100%;
     border-radius: 1px;
     background-color: $color-transparent;
@@ -44,7 +44,7 @@
   background-color: $color-default-white;
   border-radius: 50px;
   box-sizing: border-box;
-  border: 1px solid $color-transparent;
+  border: 2px solid $color-transparent;
   transition: background-color $trans-default, color $trans-default, border $trans-default;
 
   @include hover-focus {
