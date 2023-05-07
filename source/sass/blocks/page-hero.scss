@@ -1,11 +1,15 @@
 .page-hero {
-  display: flex;
+  position: relative;
   height: calc(100vh - 90px - 72px);
+}
+
+.page-hero__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .page-hero__title {
   max-width: 750px;
-  margin-right: 268px;
 }
 
 .page-hero__description {
@@ -22,5 +26,7 @@
 }
 
 .page-hero__link {
-  margin-left: auto;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
 }
