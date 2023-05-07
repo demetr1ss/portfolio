@@ -11,6 +11,29 @@
   padding: 0;
 }
 
+.nav__link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 1px;
+    width: 100%;
+    border-radius: 1px;
+    background-color: $color-transparent;
+    transition: background-color $trans-default;
+  }
+}
+
+.nav__item {
+  @include hover-focus {
+    .nav__link::before {
+      background-color: currentColor;
+    }
+  }
+}
+
 .nav__item:not(:last-child) {
   margin-right: 28px;
 }
@@ -20,4 +43,13 @@
   padding: 16px 28px;
   background-color: $color-default-white;
   border-radius: 50px;
+  box-sizing: border-box;
+  border: 1px solid $color-transparent;
+  transition: background-color $trans-default, color $trans-default, border $trans-default;
+
+  @include hover-focus {
+    border-color: $color-default-white;
+    color: $color-default-white;
+    background-color: $color-transparent;
+  }
 }
