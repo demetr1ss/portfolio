@@ -1,0 +1,26 @@
+.page-hero {
+  display: flex;
+  height: calc(100vh - 90px - 72px);
+}
+
+.page-hero__title {
+  max-width: 750px;
+  margin-right: 268px;
+}
+
+.page-hero__description {
+  max-width: 475px;
+  margin-top: 170px;
+
+  p {
+    margin: 0;
+
+    &:last-child {
+      margin-top: 16px;
+    }
+  }
+}
+
+.page-hero__link {
+  margin-left: auto;
+}

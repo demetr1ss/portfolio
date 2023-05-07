@@ -1,9 +1,12 @@
 $color-default-white: #ffffff;
 $color-default-black: #000000;
+$color-transparent-black: rgba(255, 255, 255, 0.3);
 $color-transparent: rgba(255, 255, 255, 0);
 $color-maya-blue: #78beff;
 $color-mint-green: #96ffb3;
 $color-fuchsia-pink: #fd91ff;
+$color-gainsboro: #666666;
+$color-lavender-blue: #cfcfff;
 
 $tf-default: ease;
 $trans-default: 0.3s $tf-default;

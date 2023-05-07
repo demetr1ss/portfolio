@@ -1,0 +1,17 @@
+.hero-title {
+  font-family: $ff-craftwork;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 132%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.hero-title__first-accent {
+  color: $color-mint-green;
+}
+
+.hero-title__second-accent {
+  color: #cfcfff;
+}

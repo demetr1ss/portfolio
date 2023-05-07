@@ -25,6 +25,19 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-gainsboro;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $color-transparent;
+  }
 }
 
 body {
@@ -33,6 +46,7 @@ body {
   background-color: $color-default-black;
   overflow-wrap: break-word;
   -webkit-tap-highlight-color: $color-transparent;
+  padding: 40px 100px;
 }
 
 a {

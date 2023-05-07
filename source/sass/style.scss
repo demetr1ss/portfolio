@@ -2,5 +2,10 @@
 @import "fonts";
 @import "utils";
 @import "variables";
-@import "reboot.scss";
+@import "reboot";
 @import "./blocks/marquee";
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/hero-title";
+@import "./blocks/page-hero";
+@import "./blocks/skills";

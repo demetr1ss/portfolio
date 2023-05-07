@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.nav__social-link {
+  color: $color-default-black;
+  padding: 16px 28px;
+  background-color: $color-default-white;
+  border-radius: 50px;
+}
