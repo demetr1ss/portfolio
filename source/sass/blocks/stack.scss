@@ -1,0 +1,13 @@
+.stack {
+  margin-top: 40px;
+}
+
+.stack__item {
+  font-family: $ff-craftwork;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  padding: 8px 16px;
+  border: 1px solid $color-default-white;
+  border-radius: 50px;
+}

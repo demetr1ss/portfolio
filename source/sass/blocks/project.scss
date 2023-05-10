@@ -1,0 +1,27 @@
+.project {
+  display: flex;
+  justify-content: space-between;
+
+  &--escape-room,
+  &--sedona,
+  &--simple-hotel-check,
+  &--keksobooking {
+    .project__information {
+      order: 1;
+    }
+  }
+}
+
+.project__information {
+  width: 558px;
+}
+
+.project__presentation {
+  width: 993px;
+
+  .project--six-cities &,
+  .project--scrum-board &,
+  .project--keksobooking & {
+    width: 848px;
+  }
+}

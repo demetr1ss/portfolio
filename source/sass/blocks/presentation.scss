@@ -1,0 +1,66 @@
+.presentation__image-wrapper {
+  width: 100%;
+  border-radius: 24px;
+  color: $color-default-black;
+  box-sizing: border-box;
+
+  .project--camera-shop & {
+    background: #d9d9ff;
+    padding: 64px 67px;
+    min-height: 619px;
+  }
+
+  .project--escape-room & {
+    background: #ffedd9;
+    padding: 64px 129px;
+    min-height: 976px;
+  }
+
+  .project--six-cities & {
+    background: #d9e9ff;
+    padding: 64px 57px;
+    min-height: 976px;
+  }
+
+  .project--sedona & {
+    background: #ffe1d9;
+    padding: 64px;
+    padding-left: 0;
+    min-height: 744px;
+  }
+
+  .project--big-trip & {
+    background: #d9eaff;
+    padding-left: 64px;
+    padding-top: 64px;
+    min-height: 568px;
+  }
+
+  .project--simple-hotel-check & {
+    background: #e0e6c3;
+    padding: 64px;
+    min-height: 619px;
+  }
+
+  .project--scrum-board & {
+    background: #fffafb;
+    padding: 64px;
+    padding-right: 0;
+    min-height: 744px;
+  }
+
+  .project--keksobooking & {
+    background: #fffff0;
+    padding: 64px 0 64px 72px;
+    min-height: 657px;
+  }
+}
+
+.presentation__stack {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 702px;
+  padding: 0;
+}
