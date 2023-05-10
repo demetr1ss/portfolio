@@ -1,0 +1,52 @@
+.slogan {
+  display: flex;
+}
+
+.slogan__text-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.slogan__avatar {
+  position: relative;
+  margin-right: 30px;
+
+  img {
+    display: block;
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #adffc4;
+  }
+}
+
+.slogan__title {
+  font-family: $ff-craftwork;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 132%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.slogan__link {
+  font-family: $ff-craftwork;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  margin-left: auto;
+  align-self: flex-end;
+  padding: 20px 56px;
+  color: $color-default-black;
+  background: #96ffb3;
+  border-radius: 50px;
+}
