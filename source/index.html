@@ -57,7 +57,7 @@
               d="M29.7071 34.2929C29.3166 34.6834 28.6834 34.6834 28.2929 34.2929L23.525 29.525C23.2343 29.2343 23.2322 28.7636 23.5204 28.4704V28.4704C23.8121 28.1734 24.29 28.1713 24.5844 28.4656L28.25 32.1312V23.75C28.25 23.3358 28.5858 23 29 23V23C29.4142 23 29.75 23.3358 29.75 23.75V32.1312L33.4156 28.4656C33.71 28.1713 34.1879 28.1734 34.4796 28.4704V28.4704C34.7678 28.7636 34.7657 29.2343 34.475 29.525L29.7071 34.2929Z"
               fill="currentColor"
             />
-            <rect x="0.5" y="0.5" width="57" height="57" rx="28.5" stroke="#6A6A6A" />
+            <rect x="0.5" y="0.5" width="56" height="56" rx="28.5" stroke="#6A6A6A" stroke-width="2" />
           </svg>
         </a>
       </section>
@@ -118,32 +118,36 @@
               </div>
               <div class="information__implementation implementation">
                 <h4 class="implementation__title">реализация:</h4>
-                <ul class="implementation__list">
-                  <li class="implementation__item">работа с данными и адресной строкой (query-параметры)</li>
-                  <li class="implementation__item">обработка ошибок (редирект на 404, toastify)</li>
-                  <li class="implementation__item">юнит-тестирование, Rest API</li>
-                  <li class="implementation__item">фильтрация, сортировка данных, пагинация</li>
-                  <li class="implementation__item">карусель и табы</li>
-                  <li class="implementation__item">подгрузка отзывов о товаре, публикация отзыва, валидация форм</li>
-                </ul>
+                <div class="implementation__list-wrapper">
+                  <ul class="implementation__list implementation__list--left">
+                    <li class="implementation__item">работа с данными и адресной строкой (query-параметры)</li>
+                    <li class="implementation__item">фильтрация, сортировка данных, пагинация</li>
+                    <li class="implementation__item">добавление и удаление товаров из корзины, промо-коды, оформление заказа</li>
+                  </ul>
+                  <ul class="implementation__list implementation__list--right">
+                    <li class="implementation__item">подгрузка и публикация отзывов о товаре, валидация форм</li>
+                    <li class="implementation__item">карусель и табы</li>
+                    <li class="implementation__item">юнит-тестирование и обработка ошибок (редирект на 404, toastify)</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="project__presentation presentation">
               <div class="presentation__image-wrapper">
                 <img src="#" alt="скриншот проекта Camera Shop." width="859" height="491" />
               </div>
-              <ul class="presentation__stack stack">
-                <li class="stack__item">React</li>
-                <li class="stack__item">Redux Thunk</li>
-                <li class="stack__item">TypeScript</li>
-                <li class="stack__item">Jest</li>
-                <li class="stack__item">React Testing Library</li>
-                <li class="stack__item">Toastify</li>
-                <li class="stack__item">Webpack</li>
-                <li class="stack__item">Axios</li>
-                <li class="stack__item">React Hook Form</li>
-              </ul>
             </div>
+            <ul class="project__stack stack">
+              <li class="stack__item">React</li>
+              <li class="stack__item">Redux Thunk</li>
+              <li class="stack__item">TypeScript</li>
+              <li class="stack__item">Jest</li>
+              <li class="stack__item">React Testing Library</li>
+              <li class="stack__item">Toastify</li>
+              <li class="stack__item">Webpack</li>
+              <li class="stack__item">Axios</li>
+              <li class="stack__item">React Hook Form</li>
+            </ul>
           </li>
           <li class="projects-list__item project project--escape-room">
             <div class="project__information information">
@@ -158,13 +162,17 @@
               </div>
               <div class="information__implementation implementation">
                 <h4 class="implementation__title">реализация:</h4>
-                <ul class="implementation__list">
-                  <li class="implementation__item">Миграция проекта с JS на TS</li>
-                  <li class="implementation__item">Работа с данными, роутинг</li>
-                  <li class="implementation__item">Фильтрация</li>
-                  <li class="implementation__item">Валидация формы</li>
-                  <li class="implementation__item">leaflet-карта</li>
-                </ul>
+                <div class="implementation__list-wrapper">
+                  <ul class="implementation__list implementation__list--left">
+                    <li class="implementation__item">миграция проекта с JS на TS</li>
+                    <li class="implementation__item">работа с данными, роутинг</li>
+                    <li class="implementation__item">фильтрация</li>
+                  </ul>
+                  <ul class="implementation__list implementation__list--right">
+                    <li class="implementation__item">валидация формы</li>
+                    <li class="implementation__item">leaflet-карта</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="project__presentation presentation">
@@ -172,18 +180,18 @@
                 <img src="#" alt="скриншот проекта Escape Room." width="734" height="412" />
                 <img src="#" alt="скриншот проекта Escape Room." width="734" height="412" />
               </div>
-              <ul class="presentation__stack stack">
-                <li class="stack__item">React</li>
-                <li class="stack__item">Redux Thunk</li>
-                <li class="stack__item">TypeScript</li>
-                <li class="stack__item">Styled Components</li>
-                <li class="stack__item">Leaflet</li>
-                <li class="stack__item">Toastify</li>
-                <li class="stack__item">Webpack</li>
-                <li class="stack__item">Axios</li>
-                <li class="stack__item">React Hook Form</li>
-              </ul>
             </div>
+            <ul class="project__stack stack">
+              <li class="stack__item">React</li>
+              <li class="stack__item">Redux Thunk</li>
+              <li class="stack__item">TypeScript</li>
+              <li class="stack__item">Styled Components</li>
+              <li class="stack__item">Leaflet</li>
+              <li class="stack__item">Toastify</li>
+              <li class="stack__item">Webpack</li>
+              <li class="stack__item">Axios</li>
+              <li class="stack__item">React Hook Form</li>
+            </ul>
           </li>
           <li class="projects-list__item project project--six-cities">
             <div class="project__information information">
@@ -199,17 +207,20 @@
               </div>
               <div class="information__implementation implementation">
                 <h4 class="implementation__title">реализация:</h4>
-                <ul class="implementation__list">
-                  <li class="implementation__item">работа с данными</li>
-                  <li class="implementation__item">авторизация (токен в Local Storage)</li>
-                  <li class="implementation__item">сортировка, фильтрация</li>
-                  <li class="implementation__item">leaflet-карта с интерактивными пинами</li>
-                  <li class="implementation__item">добавление / удаление отелей из избранных</li>
-                  <li class="implementation__item">сортировка избранных отелей по городам</li>
-                  <li class="implementation__item">редирект неавторизованных пользователей</li>
-                  <li class="implementation__item">добавление отзывов с рейтингом</li>
-                  <li class="implementation__item">Rest API, юнит-тестирование</li>
-                </ul>
+                <div class="implementation__list-wrapper">
+                  <ul class="implementation__list implementation__list--left">
+                    <li class="implementation__item">работа с данными</li>
+                    <li class="implementation__item">авторизация (токен в Local Storage)</li>
+                    <li class="implementation__item">сортировка, фильтрация</li>
+                    <li class="implementation__item">leaflet-карта с интерактивными пинами</li>
+                    <li class="implementation__item">добавление и удаление отелей из избранных, сортировка избранных отелей по городам</li>
+                  </ul>
+                  <ul class="implementation__list implementation__list--right">
+                    <li class="implementation__item">редирект неавторизованных пользователей</li>
+                    <li class="implementation__item">добавление отзыва с рейтингом</li>
+                    <li class="implementation__item">юнит-тестирование</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="project__presentation presentation">
@@ -217,19 +228,19 @@
                 <img src="#" alt="скриншот проекта Six Cities." width="734" height="412" />
                 <img src="#" alt="скриншот проекта Six Cities." width="734" height="412" />
               </div>
-              <ul class="presentation__stack stack">
-                <li class="stack__item">React</li>
-                <li class="stack__item">Redux Thunk</li>
-                <li class="stack__item">TypeScript</li>
-                <li class="stack__item">Jest</li>
-                <li class="stack__item">React Testing Library</li>
-                <li class="stack__item">React Hook Form</li>
-                <li class="stack__item">Axios</li>
-                <li class="stack__item">Toastify</li>
-                <li class="stack__item">Webpack</li>
-                <li class="stack__item">Leaflet</li>
-              </ul>
             </div>
+            <ul class="project__stack stack">
+              <li class="stack__item">React</li>
+              <li class="stack__item">Redux Thunk</li>
+              <li class="stack__item">TypeScript</li>
+              <li class="stack__item">Jest</li>
+              <li class="stack__item">React Testing Library</li>
+              <li class="stack__item">React Hook Form</li>
+              <li class="stack__item">Axios</li>
+              <li class="stack__item">Toastify</li>
+              <li class="stack__item">Webpack</li>
+              <li class="stack__item">Leaflet</li>
+            </ul>
           </li>
           <li class="projects-list__item project project--sedona">
             <div class="project__information information">
@@ -244,16 +255,20 @@
               </div>
               <div class="information__implementation implementation">
                 <h4 class="implementation__title">реализация:</h4>
-                <ul class="implementation__list">
-                  <li class="implementation__item">адаптивная вёрстка (breakpoints: 320 px, 768 px, 1024 px), резина</li>
-                  <li class="implementation__item">соблюдение семантики и доступности</li>
-                  <li class="implementation__item">предусмотрена работа как с JS, так и без</li>
-                  <li class="implementation__item">все интерактивные элементы имеют состояние</li>
-                  <li class="implementation__item">интерактивная google-карта</li>
-                  <li class="implementation__item">
-                    автоматизация сборки в Gulp: оптимизация изображений, использование WebP, svg sprite, минификация стилей, скриптов, html
-                  </li>
-                </ul>
+                <div class="implementation__list-wrapper">
+                  <ul class="implementation__list implementation__list--left">
+                    <li class="implementation__item">адаптивная вёрстка (резина), breakpoints 320 px, 768 px, 1024 px</li>
+                    <li class="implementation__item">соблюдение семантики и доступности</li>
+                    <li class="implementation__item">работа как с JS, так и без</li>
+                    <li class="implementation__item">состояния всех интерактивных элементов</li>
+                  </ul>
+                  <ul class="implementation__list implementation__list--right">
+                    <li class="implementation__item">интерактивная google-карта</li>
+                    <li class="implementation__item">
+                      автоматизация сборки в Gulp: оптимизация изображений, использование WebP, svg sprite, минификация стилей, скриптов, html
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="project__presentation presentation">
@@ -261,14 +276,14 @@
                 <img src="#" alt="скриншот проекта Sedona." width="734" height="412" />
                 <img src="#" alt="скриншот проекта Sedona." width="314" height="616" />
               </div>
-              <ul class="presentation__stack stack">
-                <li class="stack__item">HTML</li>
-                <li class="stack__item">SCSS</li>
-                <li class="stack__item">JS</li>
-                <li class="stack__item">Gulp</li>
-                <li class="stack__item">БЭМ</li>
-              </ul>
             </div>
+            <ul class="project__stack stack">
+              <li class="stack__item">HTML</li>
+              <li class="stack__item">SCSS</li>
+              <li class="stack__item">JS</li>
+              <li class="stack__item">Gulp</li>
+              <li class="stack__item">БЭМ</li>
+            </ul>
           </li>
           <li class="projects-list__item project project--big-trip">
             <div class="project__information information">
@@ -280,27 +295,31 @@
               </div>
               <div class="information__implementation implementation">
                 <h4 class="implementation__title">реализация:</h4>
-                <ul class="implementation__list">
-                  <li class="implementation__item">работа с данными</li>
-                  <li class="implementation__item">фильтрация, сортировка</li>
-                  <li class="implementation__item">избранные точки маршрута, добавление новых точек, редактирование и удаление ранее добавленных точек</li>
-                  <li class="implementation__item">динамический расчёт общей стоимости путешествия</li>
-                </ul>
+                <div class="implementation__list-wrapper">
+                  <ul class="implementation__list implementation__list--left">
+                    <li class="implementation__item">работа с данными</li>
+                    <li class="implementation__item">фильтрация, сортировка</li>
+                    <li class="implementation__item">избранные точки, добавление, редактирование и удаление точек маршрута</li>
+                  </ul>
+                  <ul class="implementation__list implementation__list--right">
+                    <li class="implementation__item">динамический расчёт общей стоимости путешествия</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="project__presentation presentation">
               <div class="presentation__image-wrapper">
                 <img src="#" alt="скриншот проекта Big Trip." width="994" height="568" />
               </div>
-              <ul class="presentation__stack stack">
-                <li class="stack__item">VanilaJS</li>
-                <li class="stack__item">ООП</li>
-                <li class="stack__item">Webpack</li>
-                <li class="stack__item">Babel</li>
-                <li class="stack__item">DayJS</li>
-                <li class="stack__item">Flatpickr</li>
-              </ul>
             </div>
+            <ul class="project__stack stack">
+              <li class="stack__item">VanilaJS</li>
+              <li class="stack__item">ООП</li>
+              <li class="stack__item">Webpack</li>
+              <li class="stack__item">Babel</li>
+              <li class="stack__item">DayJS</li>
+              <li class="stack__item">Flatpickr</li>
+            </ul>
           </li>
           <li class="projects-list__item project project--simple-hotel-check">
             <div class="project__information information">
@@ -314,29 +333,35 @@
               </div>
               <div class="information__implementation implementation">
                 <h4 class="implementation__title">реализация:</h4>
-                <ul class="implementation__list">
-                  <li class="implementation__item">загрузка данных об отелях с Travelpayouts, локализация (adapt-to-client) данных</li>
-                  <li class="implementation__item">возможность выбора локации, дат и количества дней</li>
-                  <li class="implementation__item">карусель</li>
-                  <li class="implementation__item">авторизация через local storage, редирект неавторизованного пользователя</li>
-                  <li class="implementation__item">валидация формы</li>
-                </ul>
+                <div class="implementation__list-wrapper">
+                  <ul class="implementation__list implementation__list--left">
+                    <li class="implementation__item">загрузка данных об отелях с Travelpayouts</li>
+                    <li class="implementation__item">локализация данных (adapt-to-client)</li>
+                    <li class="implementation__item">возможность выбора локации, даты и количества дней</li>
+                    <li class="implementation__item">добавление и сортировка избранных отелей</li>
+                  </ul>
+                  <ul class="implementation__list implementation__list--right">
+                    <li class="implementation__item">карусель</li>
+                    <li class="implementation__item">авторизация через local storage, редирект неавторизованного пользователя</li>
+                    <li class="implementation__item">валидация формы</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="project__presentation presentation">
               <div class="presentation__image-wrapper">
                 <img src="#" alt="скриншот проекта Simple-Hotels-Check." width="859" height="488" />
               </div>
-              <ul class="presentation__stack stack">
-                <li class="stack__item">React</li>
-                <li class="stack__item">Redux Saga</li>
-                <li class="stack__item">TypeScript</li>
-                <li class="stack__item">React Router</li>
-                <li class="stack__item">Webpack</li>
-                <li class="stack__item">CSS Modules</li>
-                <li class="stack__item">Date-Fns</li>
-              </ul>
             </div>
+            <ul class="project__stack stack">
+              <li class="stack__item">React</li>
+              <li class="stack__item">Redux Saga</li>
+              <li class="stack__item">TypeScript</li>
+              <li class="stack__item">React Router</li>
+              <li class="stack__item">Webpack</li>
+              <li class="stack__item">CSS Modules</li>
+              <li class="stack__item">Date-Fns</li>
+            </ul>
           </li>
           <li class="projects-list__item project project--scrum-board">
             <div class="project__information information">
@@ -346,14 +371,18 @@
               </div>
               <div class="information__implementation implementation">
                 <h4 class="implementation__title">реализация:</h4>
-                <ul class="implementation__list">
-                  <li class="implementation__item">CRUD-операции в Firebase</li>
-                  <li class="implementation__item">взаимодействие с сервером посредством Rest API Firebase (без установки зависимостей)</li>
-                  <li class="implementation__item">drag-n-drop</li>
-                  <li class="implementation__item">валидация формы</li>
-                  <li class="implementation__item">доступность</li>
-                  <li class="implementation__item">loaders</li>
-                </ul>
+                <div class="implementation__list-wrapper">
+                  <ul class="implementation__list">
+                    <li class="implementation__item">CRUD-операции в Firebase</li>
+                    <li class="implementation__item">взаимодействие с сервером посредством Rest API Firebase (без установки зависимостей)</li>
+                    <li class="implementation__item">drag-n-drop</li>
+                  </ul>
+                  <ul class="implementation__list implementation__list--right">
+                    <li class="implementation__item">валидация формы</li>
+                    <li class="implementation__item">доступность</li>
+                    <li class="implementation__item">loaders</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="project__presentation presentation">
@@ -361,18 +390,18 @@
                 <img src="#" alt="скриншот проекта Scrum Board." width="314" height="616" />
                 <img src="#" alt="скриншот проекта Scrum Board." width="707" height="412" />
               </div>
-              <ul class="presentation__stack stack">
-                <li class="stack__item">React</li>
-                <li class="stack__item">Redux Thunk</li>
-                <li class="stack__item">React Router</li>
-                <li class="stack__item">TypeScript</li>
-                <li class="stack__item">Firebase</li>
-                <li class="stack__item">Axios</li>
-                <li class="stack__item">React Hook Form</li>
-                <li class="stack__item">Webpack</li>
-                <li class="stack__item">CSS Modules</li>
-              </ul>
             </div>
+            <ul class="project__stack stack">
+              <li class="stack__item">React</li>
+              <li class="stack__item">Redux Thunk</li>
+              <li class="stack__item">React Router</li>
+              <li class="stack__item">TypeScript</li>
+              <li class="stack__item">Firebase</li>
+              <li class="stack__item">Axios</li>
+              <li class="stack__item">React Hook Form</li>
+              <li class="stack__item">Webpack</li>
+              <li class="stack__item">CSS Modules</li>
+            </ul>
           </li>
           <li class="projects-list__item project project--keksobooking">
             <div class="project__information information">
@@ -384,26 +413,32 @@
               </div>
               <div class="information__implementation implementation">
                 <h4 class="implementation__title">реализация:</h4>
-                <ul class="implementation__list">
-                  <li class="implementation__item">форма добавления объявления, валидация формы посредством Pristine Validate</li>
-                  <li class="implementation__item">отправка и получения данных с backend-а</li>
-                  <li class="implementation__item">фильтрация объявлений на интерактивной leaflet-карте</li>
-                  <li class="implementation__item">debounce</li>
-                  <li class="implementation__item">связывание формы с координатами пина на карте с возможностью перемещения и получения реальных LAT&nbsp;&&nbsp;LNG</li>
-                </ul>
+                <div class="implementation__list-wrapper">
+                  <ul class="implementation__list implementation__list--left">
+                    <li class="implementation__item">форма добавления объявления, валидация формы посредством Pristine Validate</li>
+                    <li class="implementation__item">отправка и получения данных с backend-а</li>
+                    <li class="implementation__item">фильтрация объявлений на интерактивной leaflet-карте</li>
+                  </ul>
+                  <ul class="implementation__list implementation__list--right">
+                    <li class="implementation__item">debounce</li>
+                    <li class="implementation__item">
+                      связывание формы с координатами пина на карте с возможностью перемещения и получения реальных LAT&nbsp;&&nbsp;LNG
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="project__presentation presentation">
               <div class="presentation__image-wrapper">
                 <img src="#" alt="скриншот проекта Keksobooking." width="921" height="529" />
               </div>
-              <ul class="presentation__stack stack">
-                <li class="stack__item">VanilaJS</li>
-                <li class="stack__item">Pristine</li>
-                <li class="stack__item">no-ui-slider</li>
-                <li class="stack__item">leaflet</li>
-              </ul>
             </div>
+            <ul class="project__stack stack">
+              <li class="stack__item">VanilaJS</li>
+              <li class="stack__item">Pristine</li>
+              <li class="stack__item">no-ui-slider</li>
+              <li class="stack__item">leaflet</li>
+            </ul>
           </li>
         </ul>
       </section>
