@@ -15,6 +15,7 @@
 .page-hero__description {
   max-width: 475px;
   margin-top: 170px;
+  margin-right: 82px;
 
   p {
     margin: 0;
@@ -23,10 +24,24 @@
       margin-top: 16px;
     }
   }
+
+  @include vp-1599 {
+    margin-right: 0;
+  }
 }
 
 .page-hero__link {
   position: absolute;
   right: 0;
   bottom: 40px;
+
+  rect {
+    transition: stroke $trans-default;
+  }
+
+  @include hover-focus {
+    rect {
+      stroke: $color-default-white;
+    }
+  }
 }

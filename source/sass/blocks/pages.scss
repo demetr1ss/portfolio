@@ -1,0 +1,36 @@
+.pages__title {
+  position: relative;
+  margin: 0;
+  font-weight: 600;
+  line-height: 100%;
+  color: $color-lavender-blue;
+  padding-left: 24px;
+  margin-bottom: 24px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/sprite.svg#pages-icon");
+  }
+}
+
+.pages__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  text-transform: lowercase;
+}
+
+.pages__item:not(:last-child) {
+  position: relative;
+  padding-right: 26px;
+
+  &::before {
+    position: absolute;
+    right: 12px;
+    content: ";";
+  }
+}

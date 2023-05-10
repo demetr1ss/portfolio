@@ -1,0 +1,65 @@
+.project {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d";
+  justify-content: space-between;
+
+  &--escape-room,
+  &--sedona,
+  &--simple-hotel-check,
+  &--keksobooking {
+    .project__presentation {
+      grid-area: a;
+    }
+
+    .project__information {
+      grid-area: b;
+    }
+
+    .project__stack {
+      grid-area: c;
+    }
+  }
+
+  &--camera-shop,
+  &--six-cities,
+  &--big-trip,
+  &--scrum-board {
+    .project__presentation {
+      grid-area: b;
+    }
+
+    .project__information {
+      grid-area: a;
+    }
+
+    .project__stack {
+      grid-area: d;
+    }
+  }
+}
+
+.project__information {
+  align-self: center;
+  width: 558px;
+}
+
+.project__presentation {
+  width: 993px;
+
+  .project--six-cities &,
+  .project--scrum-board &,
+  .project--keksobooking & {
+    width: 848px;
+  }
+}
+
+.project__stack {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 702px;
+  padding: 0;
+}
