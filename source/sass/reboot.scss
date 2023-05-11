@@ -21,18 +21,19 @@ html {
   line-height: 140%;
   font-family: $ff-vela-sans;
   color: $color-default-white;
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 
   &::-webkit-scrollbar {
-    width: 5px;
+    width: 6px;
   }
 
   &::-webkit-scrollbar-thumb {
     background: $color-gainsboro;
-    border-radius: 5px;
+    border-radius: 6px;
   }
 
   &::-webkit-scrollbar-track {

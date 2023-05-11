@@ -5,11 +5,16 @@
   color: $color-default-black;
   box-sizing: border-box;
   align-items: center;
+  transition: scale $trans-default, box-shadow $trans-default;
 
   .project--camera-shop & {
     background: $color-quartz;
     padding: 64px 67px;
     min-height: 619px;
+
+    @include hover-focus {
+      box-shadow: 0 0 80px -40px $color-quartz;
+    }
   }
 
   .project--escape-room & {
@@ -20,6 +25,10 @@
     img:not(:last-child) {
       margin-bottom: 24px;
     }
+
+    @include hover-focus {
+      box-shadow: 0 0 80px -40px $color-forget-me-not;
+    }
   }
 
   .project--six-cities & {
@@ -29,6 +38,10 @@
 
     img:not(:last-child) {
       margin-bottom: 24px;
+    }
+
+    @include hover-focus {
+      box-shadow: 0 0 80px -40px $color-solitude;
     }
   }
 
@@ -42,6 +55,10 @@
     img:not(:last-child) {
       margin-right: 40px;
     }
+
+    @include hover-focus {
+      box-shadow: 0 0 80px -40px $color-pippin;
+    }
   }
 
   .project--big-trip & {
@@ -49,12 +66,20 @@
     padding-left: 64px;
     padding-top: 64px;
     min-height: 568px;
+
+    @include hover-focus {
+      box-shadow: 0 0 80px -40px $color-solitude-2;
+    }
   }
 
   .project--simple-hotel-check & {
     background: $color-frost;
     padding: 64px;
     min-height: 619px;
+
+    @include hover-focus {
+      box-shadow: 0 0 80px -40px $color-frost;
+    }
   }
 
   .project--scrum-board & {
@@ -67,17 +92,29 @@
     img:not(:last-child) {
       margin-right: 40px;
     }
+
+    @include hover-focus {
+      box-shadow: 0 0 80px -40px $color-lavender-blush;
+    }
   }
 
   .project--keksobooking & {
     background: $color-ivory;
     padding: 64px 0 64px 72px;
     min-height: 657px;
+
+    @include hover-focus {
+      box-shadow: 0 0 80px -40px $color-ivory;
+    }
   }
 
   img {
     display: block;
     width: 100%;
     height: auto;
+  }
+
+  @include hover-focus {
+    scale: 1.02;
   }
 }
