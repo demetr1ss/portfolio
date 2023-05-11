@@ -39,17 +39,11 @@
 }
 
 .nav__social-link {
-  color: $color-default-black;
   padding: 16px 28px;
   background-color: $color-default-white;
-  border-radius: 50px;
-  box-sizing: border-box;
-  border: 2px solid $color-transparent;
-  transition: background-color $trans-default, color $trans-default, border $trans-default;
 
   @include hover-focus {
     border-color: $color-default-white;
     color: $color-default-white;
-    background-color: $color-transparent;
   }
 }

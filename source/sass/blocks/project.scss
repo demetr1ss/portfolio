@@ -42,16 +42,16 @@
 
 .project__information {
   align-self: center;
-  width: 558px;
+  max-width: 558px;
 }
 
 .project__presentation {
-  width: 993px;
+  max-width: 993px;
 
   .project--six-cities &,
   .project--scrum-board &,
   .project--keksobooking & {
-    width: 848px;
+    max-width: 848px;
   }
 }
 

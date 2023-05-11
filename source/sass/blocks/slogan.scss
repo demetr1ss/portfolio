@@ -39,14 +39,14 @@
 }
 
 .slogan__link {
-  font-family: $ff-craftwork;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
   margin-left: auto;
   align-self: flex-end;
   padding: 20px 56px;
   color: $color-default-black;
-  background: #96ffb3;
-  border-radius: 50px;
+  background: $color-mint-green;
+
+  @include hover-focus {
+    border-color: $color-mint-green;
+    color: $color-mint-green;
+  }
 }

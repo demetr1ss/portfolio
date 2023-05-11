@@ -1,0 +1,15 @@
+.social-link {
+  font-family: $ff-craftwork;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: $color-default-black;
+  border-radius: 50px;
+  box-sizing: border-box;
+  border: 2px solid $color-transparent;
+  transition: background-color $trans-default, color $trans-default, border $trans-default;
+
+  @include hover-focus {
+    background-color: $color-transparent;
+  }
+}

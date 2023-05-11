@@ -3,6 +3,7 @@
   border-radius: 24px;
   color: $color-default-black;
   box-sizing: border-box;
+  align-items: center;
 
   .project--camera-shop & {
     background: $color-quartz;
@@ -14,19 +15,32 @@
     background: $color-forget-me-not;
     padding: 64px 129px;
     min-height: 976px;
+
+    img:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 
   .project--six-cities & {
     background: $color-solitude;
     padding: 64px 57px;
     min-height: 976px;
+
+    img:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 
   .project--sedona & {
+    display: flex;
     background: $color-pippin;
     padding: 64px;
     padding-left: 0;
     min-height: 744px;
+
+    img:not(:last-child) {
+      margin-right: 40px;
+    }
   }
 
   .project--big-trip & {
@@ -43,15 +57,26 @@
   }
 
   .project--scrum-board & {
+    display: flex;
     background: $color-lavender-blush;
     padding: 64px;
     padding-right: 0;
     min-height: 744px;
+
+    img:not(:last-child) {
+      margin-right: 40px;
+    }
   }
 
   .project--keksobooking & {
     background: $color-ivory;
     padding: 64px 0 64px 72px;
     min-height: 657px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
