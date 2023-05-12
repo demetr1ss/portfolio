@@ -31,9 +31,13 @@
 }
 
 .page-hero__link {
-  position: absolute;
-  right: 0;
+  position: fixed;
+  right: 5%;
   bottom: 40px;
+  cursor: pointer;
+  transition: visibility $trans-default, opacity $trans-default, transform $trans-default;
+  visibility: visible;
+  opacity: 1;
 
   rect {
     transition: stroke $trans-default;
@@ -43,5 +47,14 @@
     rect {
       stroke: $color-default-white;
     }
+  }
+
+  &--rotate {
+    transform: rotate(180deg);
+  }
+
+  &--hide {
+    visibility: hidden;
+    opacity: 0;
   }
 }
