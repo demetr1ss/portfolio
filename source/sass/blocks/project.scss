@@ -23,6 +23,12 @@
     }
   }
 
+  &--six-cities,
+  &--scrum-board,
+  &--keksobooking {
+    justify-content: space-around;
+  }
+
   &--camera-shop,
   &--six-cities,
   &--big-trip,
