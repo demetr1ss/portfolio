@@ -3,6 +3,15 @@
   padding: 0;
 }
 
-.projects-list__item:not(:last-child) {
-  margin-bottom: 240px;
+.projects-list__item {
+  opacity: 0.4;
+  transition: opacity 0.5s $tf-default;
+
+  &:not(:last-child) {
+    margin-bottom: 240px;
+  }
+
+  &.element-show {
+    opacity: 1;
+  }
 }

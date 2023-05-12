@@ -70,6 +70,10 @@
     padding-left: 64px;
     padding-top: 64px;
 
+    img {
+      border-radius: 0 0 24px 0;
+    }
+
     @include hover-focus {
       box-shadow: 0 0 80px -40px $color-solitude-2;
     }
