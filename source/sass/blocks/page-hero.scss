@@ -13,9 +13,11 @@
 }
 
 .page-hero__description {
+  position: relative;
   max-width: 475px;
-  margin-top: 170px;
+  margin-top: auto;
   margin-right: 82px;
+  bottom: 11px;
 
   p {
     margin: 0;
