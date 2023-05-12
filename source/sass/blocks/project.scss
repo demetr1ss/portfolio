@@ -4,6 +4,7 @@
     "a b"
     "c d";
   justify-content: space-between;
+  column-gap: 40px;
 
   &--escape-room,
   &--sedona,
@@ -46,6 +47,7 @@
 }
 
 .project__presentation {
+  align-self: center;
   max-width: 993px;
 
   .project--six-cities &,
