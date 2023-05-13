@@ -5,7 +5,19 @@
   line-height: 130%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 40px;
+  max-width: 500px;
+
+  .project--six-cities &,
+  .project--scrum-board &,
+  .project--keksobooking & {
+    max-width: 550px;
+  }
+
+  .project--simple-hotel-check & {
+    max-width: 515px;
+  }
 }
 
 .information__pages {

@@ -10,5 +10,7 @@
   padding: 8px 16px;
   border: 2px solid $color-default-white;
   border-radius: 50px;
+  box-sizing: border-box;
   user-select: none;
+  text-align: center;
 }
