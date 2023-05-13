@@ -41,6 +41,7 @@
     .presentation__link {
       opacity: 1;
       transform: translateX(0);
+      pointer-events: all;
     }
   }
 }
@@ -139,6 +140,7 @@
 .presentation__link {
   display: flex;
   opacity: 0;
+  pointer-events: none;
   transform: translateX(90%);
   position: absolute;
   right: 14px;
