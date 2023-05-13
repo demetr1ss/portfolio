@@ -23,12 +23,6 @@
     }
   }
 
-  &--six-cities,
-  &--scrum-board,
-  &--keksobooking {
-    justify-content: space-around;
-  }
-
   &--camera-shop,
   &--six-cities,
   &--big-trip,
@@ -55,12 +49,6 @@
 .project__presentation {
   align-self: center;
   max-width: 993px;
-
-  .project--six-cities &,
-  .project--scrum-board &,
-  .project--keksobooking & {
-    max-width: 848px;
-  }
 }
 
 .project__stack {

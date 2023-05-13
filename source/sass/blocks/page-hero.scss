@@ -37,7 +37,7 @@
   right: 5%;
   bottom: 40px;
   cursor: pointer;
-  transition: visibility $trans-default, opacity $trans-default, transform $trans-default;
+  transition: visibility $trans-default, opacity $trans-default, transform $trans-default, scale $trans-default;
   visibility: visible;
   opacity: 1;
 
@@ -46,6 +46,8 @@
   }
 
   @include hover-focus {
+    scale: 1.05;
+
     rect {
       stroke: $color-default-white;
     }
