@@ -171,4 +171,8 @@
   @include hover-focus {
     scale: 1.06;
   }
+
+  @include vp-1599 {
+    transform: translateX(70%);
+  }
 }

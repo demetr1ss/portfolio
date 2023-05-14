@@ -1,42 +1,55 @@
 .project {
   display: grid;
-  grid-template-areas:
-    "a b"
-    "c d";
   justify-content: space-between;
   column-gap: 40px;
+
+  .project__information {
+    grid-area: information;
+  }
+
+  .project__presentation {
+    grid-area: presentation;
+  }
+
+  .project__stack {
+    grid-area: stack;
+  }
 
   &--escape-room,
   &--sedona,
   &--simple-hotel-check,
   &--keksobooking {
-    .project__presentation {
-      grid-area: a;
-    }
-
-    .project__information {
-      grid-area: b;
-    }
-
-    .project__stack {
-      grid-area: c;
-    }
+    grid-template-areas:
+      "presentation information"
+      "stack clear";
   }
 
   &--camera-shop,
   &--six-cities,
   &--big-trip,
   &--scrum-board {
-    .project__presentation {
-      grid-area: b;
+    grid-template-areas:
+      "information presentation"
+      "clear stack";
+  }
+
+  @include vp-1599 {
+    &--escape-room,
+    &--sedona,
+    &--simple-hotel-check,
+    &--keksobooking {
+      grid-template-areas:
+        "presentation information"
+        "stack information";
     }
 
-    .project__information {
-      grid-area: a;
-    }
-
-    .project__stack {
-      grid-area: d;
+    &--camera-shop,
+    &--six-cities,
+    &--big-trip,
+    &--scrum-board {
+      grid-template-areas:
+        "information presentation"
+        "information stack";
     }
   }
 }

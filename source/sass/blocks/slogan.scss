@@ -36,6 +36,11 @@
   line-height: 132%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+
+  @include vp-1599 {
+    font-size: 52px;
+    line-height: 100%;
+  }
 }
 
 .slogan__link {
