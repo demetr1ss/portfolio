@@ -174,5 +174,12 @@
 
   @include vp-1599 {
     transform: translateX(70%);
+    width: 90px;
+    height: 90px;
+  }
+
+  @include vp-1439 {
+    width: 85px;
+    height: 85px;
   }
 }
