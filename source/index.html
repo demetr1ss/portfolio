@@ -626,7 +626,10 @@
         <div class="slogan__wrapper">
           <div class="slogan__text-wrapper">
             <div class="slogan__avatar">
-              <img src="./img/avatar.png" alt="аватар." width="100" height="100" />
+              <picture>
+                <source type="image/webp" srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x">
+                <img src="img/avatar.png" srcset="img/avatar@2x.png" alt="аватар." width="100" height="100" />
+              </picture>
             </div>
             <span class="slogan__title">давайте вместе</span>
           </div>
