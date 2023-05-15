@@ -135,6 +135,16 @@
     max-width: 100%;
     height: auto;
   }
+
+  @include vp-1599 {
+    padding: 44px;
+
+    .project--escape-room &,
+    .project--six-cities & {
+      padding-left: 82px;
+      padding-right: 82px;
+    }
+  }
 }
 
 .presentation__link {
