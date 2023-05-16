@@ -1,11 +1,19 @@
 .slogan {
   display: flex;
+
+  @include vp-1023 {
+    display: block;
+  }
 }
 
 .slogan__text-wrapper {
   display: flex;
   align-items: flex-end;
   margin-bottom: 12px;
+
+  @include vp-1023 {
+    margin-bottom: 8px;
+  }
 }
 
 .slogan__avatar {
@@ -26,6 +34,10 @@
     height: 20px;
     border-radius: 50%;
     background-color: $color-magic-mint;
+  }
+
+  @include vp-1023 {
+    margin-right: 12px;
   }
 }
 

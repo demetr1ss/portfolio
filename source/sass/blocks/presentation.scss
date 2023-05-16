@@ -145,6 +145,16 @@
       padding-right: 82px;
     }
   }
+
+  @include vp-1023 {
+    padding: 44px 72px;
+
+    .project--escape-room &,
+    .project--six-cities & {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
 }
 
 .presentation__link {
@@ -191,5 +201,22 @@
   @include vp-1439 {
     width: 85px;
     height: 85px;
+  }
+
+  @include vp-1023 {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+    width: 76px;
+    height: 76px;
+    font-size: 14px;
+
+    &--github {
+      bottom: 16px;
+    }
+
+    &--host {
+      bottom: 100px;
+    }
   }
 }

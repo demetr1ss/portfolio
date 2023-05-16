@@ -11,10 +11,13 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 100px;
+
+  @include vp-1023 {
+    margin-bottom: 72px;
+  }
 }
 
 .projects__list {
   margin-top: 0;
   margin-bottom: 200px;
 }
-

@@ -48,6 +48,10 @@ body {
   overflow-wrap: break-word;
   -webkit-tap-highlight-color: $color-transparent;
   padding: 2% 5%;
+
+  @include vp-1023 {
+    padding: 40px;
+  }
 }
 
 a {
