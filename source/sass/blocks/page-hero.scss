@@ -2,7 +2,7 @@
   position: relative;
   height: calc(100vh - 90px - 72px);
 
-  @include vp-1023 {
+  @include vp-1279 {
     height: auto;
     margin-bottom: 200px;
   }
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
 
-  @include vp-1023 {
+  @include vp-1279 {
     display: grid;
     grid-template-areas:
       "title title"
@@ -23,7 +23,7 @@
 .page-hero__title {
   max-width: 750px;
 
-  @include vp-1023 {
+  @include vp-1279 {
     font-size: 58px;
     margin-bottom: 40px;
     grid-area: title;
@@ -49,7 +49,7 @@
     margin-right: 0;
   }
 
-  @include vp-1023 {
+  @include vp-1279 {
     margin-left: auto;
     max-width: 396px;
     grid-area: description;
@@ -87,7 +87,7 @@
     scale: 1.05;
   }
 
-  @include vp-1023 {
+  @include vp-1279 {
     grid-area: button;
     position: static;
     width: 58px;

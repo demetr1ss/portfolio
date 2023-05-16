@@ -146,7 +146,7 @@
     }
   }
 
-  @include vp-1023 {
+  @include vp-1279 {
     padding: 44px 72px;
 
     .project--escape-room &,
@@ -199,17 +199,9 @@
   }
 
   @include vp-1439 {
-    width: 85px;
-    height: 85px;
-  }
-
-  @include vp-1023 {
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: all;
+    font-size: 14px;
     width: 76px;
     height: 76px;
-    font-size: 14px;
 
     &--github {
       bottom: 16px;
@@ -218,5 +210,11 @@
     &--host {
       bottom: 100px;
     }
+  }
+
+  @include vp-1279 {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
   }
 }
