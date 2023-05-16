@@ -1,6 +1,11 @@
 .page-hero {
   position: relative;
   height: calc(100vh - 90px - 72px);
+
+  @include vp-1023 {
+    height: auto;
+    margin-bottom: 200px;
+  }
 }
 
 .page-hero__wrapper {

@@ -1,5 +1,9 @@
 .projects {
   margin-top: 190px;
+
+  @include vp-1023 {
+    margin-top: 181px;
+  }
 }
 
 .projects__title {

@@ -6,13 +6,19 @@
   }
 }
 
+.slogan__wrapper {
+  @include vp-1023 {
+    margin-bottom: 60px;
+  }
+}
+
 .slogan__text-wrapper {
   display: flex;
   align-items: flex-end;
   margin-bottom: 12px;
 
   @include vp-1023 {
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
 }
 
@@ -23,6 +29,11 @@
   img {
     display: block;
     margin: 0;
+
+    @include vp-1599 {
+      width: 86px;
+      height: 86px;
+    }
   }
 
   &::before {
@@ -52,6 +63,11 @@
   @include vp-1599 {
     font-size: 52px;
     line-height: 100%;
+  }
+
+  @include vp-1023 {
+    letter-spacing: normal;
+    line-height: 130%;
   }
 }
 
