@@ -30,6 +30,22 @@
   }
 }
 
+@mixin hover-focus-active {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
+
+  &.focus-visible:focus {
+    @content;
+  }
+
+  &:active {
+    @content;
+  }
+}
+
 @mixin vp-1919 {
   @media (max-width: ($vp-1920 - 1px)) {
     @content;

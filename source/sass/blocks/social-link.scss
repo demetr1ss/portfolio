@@ -9,7 +9,7 @@
   border: 2px solid $color-transparent;
   transition: background-color $trans-default, color $trans-default, border $trans-default;
 
-  @include hover-focus {
+  @include hover-focus-active {
     background-color: $color-transparent;
   }
 }

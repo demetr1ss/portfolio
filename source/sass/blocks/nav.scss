@@ -27,7 +27,7 @@
 }
 
 .nav__item {
-  @include hover-focus {
+  @include hover-focus-active {
     .nav__link::before {
       background-color: currentColor;
     }
@@ -42,7 +42,7 @@
   padding: 16px 28px;
   background-color: $color-default-white;
 
-  @include hover-focus {
+  @include hover-focus-active {
     border-color: $color-default-white;
     color: $color-default-white;
   }

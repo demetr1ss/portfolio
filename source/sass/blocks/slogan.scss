@@ -78,7 +78,7 @@
   color: $color-default-black;
   background: $color-mint-green;
 
-  @include hover-focus {
+  @include hover-focus-active {
     border-color: $color-mint-green;
     color: $color-mint-green;
   }
