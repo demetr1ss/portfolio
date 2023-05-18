@@ -210,11 +210,11 @@
     svg {
       animation: headShake;
       animation-duration: 2s;
+      animation-delay: 0.25s;
     }
   }
 
   @include vp-1599 {
-    transform: translateX(70%);
     width: 90px;
     height: 90px;
   }
@@ -235,7 +235,6 @@
 
   @include vp-1279 {
     opacity: 1;
-    transform: translateX(0);
     pointer-events: all;
   }
 }
