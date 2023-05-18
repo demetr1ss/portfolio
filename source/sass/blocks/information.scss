@@ -18,6 +18,16 @@
   .project--simple-hotel-check & {
     max-width: 515px;
   }
+
+  @include vp-1279 {
+    margin-bottom: 32px;
+
+    .project--big-trip &,
+    .project--keksobooking &,
+    .project--scrum-board & {
+      margin-bottom: 24px;
+    }
+  }
 }
 
 .information__pages {

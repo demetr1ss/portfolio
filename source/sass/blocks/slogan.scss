@@ -24,7 +24,7 @@
 
 .slogan__avatar {
   position: relative;
-  margin-right: 30px;
+  margin-right: 16px;
 
   img {
     display: block;
@@ -47,7 +47,7 @@
     background-color: $color-magic-mint;
   }
 
-  @include vp-1359 {
+  @include vp-1439 {
     margin-right: 12px;
   }
 }
