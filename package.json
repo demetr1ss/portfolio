@@ -48,5 +48,8 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }
