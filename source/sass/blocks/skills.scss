@@ -1,9 +1,4 @@
 .skills {
-  margin-left: -5%;
-  margin-right: -5%;
-
-  @include vp-1279 {
-    margin-left: -3%;
-    margin-right: -3%;
-  }
+  width: 100vw;
+  margin: 0 calc(-50vw + 50%);
 }
