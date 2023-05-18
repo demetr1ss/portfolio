@@ -45,13 +45,6 @@
       opacity: 1;
     }
   }
-
-  &:not(:hover) {
-    .presentation__link {
-      animation: zoomOut;
-      animation-duration: 1s;
-    }
-  }
 }
 
 .presentation__image-wrapper {
