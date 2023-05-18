@@ -77,6 +77,11 @@
     max-width: 100%;
     order: 0;
     margin-bottom: 24px;
+    align-self: auto;
+  }
+
+  @include vp-1023 {
+    align-self: center;
   }
 }
 
