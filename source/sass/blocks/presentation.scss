@@ -43,6 +43,11 @@
       animation-duration: 1.3s;
       pointer-events: all;
       opacity: 1;
+
+      /* stylelint-disable-next-line max-nesting-depth */
+      @include vp-1279 {
+        animation: none;
+      }
     }
   }
 }
