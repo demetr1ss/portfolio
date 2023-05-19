@@ -39,15 +39,9 @@
     }
 
     .presentation__link {
-      animation: zoomInRight;
-      animation-duration: 1.3s;
+      transform: translateX(0);
       pointer-events: all;
       opacity: 1;
-
-      /* stylelint-disable-next-line max-nesting-depth */
-      @include vp-1279 {
-        animation: none;
-      }
     }
   }
 }
@@ -176,6 +170,7 @@
   display: flex;
   opacity: 0;
   pointer-events: none;
+  transform: translateX(90%);
   position: absolute;
   right: 14px;
   font-family: $ff-craftwork;
@@ -188,7 +183,7 @@
   align-items: center;
   justify-content: center;
   gap: 7px;
-  transition: opacity $trans-default, scale $trans-default;
+  transition: transform 1s $tf-default, opacity $trans-default, scale $trans-default;
 
   &--host {
     background-color: $color-mint-green;
@@ -202,13 +197,15 @@
     bottom: 20px;
   }
 
+  svg {
+    transition: transform 0.4s $tf-default 0.3s;
+  }
+
   @include hover-focus-active {
     scale: 1.06;
 
     svg {
-      animation: headShake;
-      animation-duration: 2s;
-      animation-delay: 0.25s;
+      transform: translateX(4px);
     }
   }
 
