@@ -20,6 +20,11 @@
     animation-duration: 35s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+
+    @include vp-767 {
+      font-size: 28px;
+      line-height: 130%;
+    }
   }
 
   &__text--reverse {
@@ -38,8 +43,13 @@
     align-items: center;
     justify-items: center;
     margin: 0;
-    padding: 10px;
+    padding-bottom: 10px;
     gap: 29px;
+
+    @include vp-767 {
+      gap: 10px;
+      padding-bottom: 5px;
+    }
   }
 
   span::before {
@@ -55,6 +65,10 @@
     width: 10px;
     height: 51px;
     background-image: url("../img/sprite.svg#comma");
+
+    @include vp-767 {
+      height: 30px;
+    }
   }
 
   span:nth-child(2n)::before {
@@ -62,6 +76,10 @@
     width: 31px;
     height: 68px;
     background-image: url("../img/sprite.svg#slash");
+
+    @include vp-767 {
+      height: 30px;
+    }
   }
 
   span:nth-child(3n)::before {
@@ -69,6 +87,10 @@
     width: 40px;
     height: 39px;
     background-image: url("../img/sprite.svg#star");
+
+    @include vp-767 {
+      height: 23px;
+    }
   }
 }
 

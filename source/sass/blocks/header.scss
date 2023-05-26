@@ -4,4 +4,8 @@
   font-weight: 500;
   line-height: 100%;
   margin-bottom: 72px;
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
 }

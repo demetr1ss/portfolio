@@ -53,6 +53,10 @@ body {
   @include vp-1279 {
     padding: 40px;
   }
+
+  @include vp-767 {
+    padding: 32px 16px;
+  }
 }
 
 a {
