@@ -164,6 +164,11 @@
       padding-right: 100px;
     }
   }
+
+  @include vp-1023 {
+    padding: 36px 22px;
+    margin-bottom: 16px;
+  }
 }
 
 .presentation__link {
@@ -189,6 +194,11 @@
     background-color: $color-mint-green;
     color: $color-default-black;
     bottom: 136px;
+
+    @include vp-1023 {
+      color: $color-medium-aquamarine;
+      margin-right: 12px;
+    }
   }
 
   &--github {
@@ -231,5 +241,17 @@
   @include vp-1279 {
     opacity: 1;
     pointer-events: all;
+    transform: none;
+  }
+
+  @include vp-1023 {
+    display: inline-flex;
+    position: static;
+    padding: 12px 28px;
+    background: none;
+    width: auto;
+    height: auto;
+    border: 1px solid;
+    border-radius: 100px;
   }
 }

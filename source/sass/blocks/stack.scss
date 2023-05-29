@@ -10,4 +10,19 @@
   user-select: none;
   text-align: center;
   max-height: 34px;
+
+  @include vp-1023 {
+    font-family: $ff-vela-sans;
+    font-weight: 400;
+    max-height: none;
+    border: none;
+    line-height: 135%;
+    padding: 0;
+    text-align: start;
+    color: $color-gainsboro-2;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
 }

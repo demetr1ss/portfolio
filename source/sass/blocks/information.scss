@@ -28,6 +28,10 @@
       margin-bottom: 24px;
     }
   }
+
+  @include vp-1023 {
+    font-size: 20px;
+  }
 }
 
 .information__pages {

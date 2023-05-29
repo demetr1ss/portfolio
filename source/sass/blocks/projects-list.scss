@@ -6,5 +6,9 @@
 .projects-list__item {
   &:not(:last-child) {
     margin-bottom: 193px;
+
+    @include vp-1023 {
+      margin-bottom: 100px;
+    }
   }
 }

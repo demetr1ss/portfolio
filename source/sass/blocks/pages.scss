@@ -1,4 +1,5 @@
 .pages__title {
+  font-size: 18px;
   position: relative;
   margin: 0;
   font-weight: 600;
@@ -27,6 +28,10 @@
   padding: 0;
   display: flex;
   text-transform: lowercase;
+
+  @include vp-1023 {
+    display: block;
+  }
 }
 
 .pages__item:not(:last-child) {
@@ -37,5 +42,24 @@
     position: absolute;
     right: 12px;
     content: ";";
+  }
+
+  @include vp-1023 {
+    font-family: $ff-vela-sans;
+    font-weight: 400;
+    max-height: none;
+    border: none;
+    line-height: 135%;
+    padding: 0;
+    text-align: start;
+    color: $color-gainsboro-2;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 }
