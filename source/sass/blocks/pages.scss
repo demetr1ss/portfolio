@@ -29,7 +29,7 @@
   display: flex;
   text-transform: lowercase;
 
-  @include vp-1023 {
+  @include vp-767 {
     display: block;
   }
 }
@@ -44,7 +44,7 @@
     content: ";";
   }
 
-  @include vp-1023 {
+  @include vp-767 {
     font-family: $ff-vela-sans;
     font-weight: 400;
     max-height: none;

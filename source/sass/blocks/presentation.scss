@@ -104,6 +104,11 @@
 
     img {
       border-radius: 0 0 24px 0;
+
+      /* stylelint-disable-next-line max-nesting-depth */
+      @include vp-767 {
+        border-radius: 12px;
+      }
     }
   }
 
@@ -139,9 +144,10 @@
       width: 100%;
     }
 
-    @include vp-1023 {
+    @include vp-767 {
       max-width: 100%;
       width: auto;
+      border-radius: 12px;
     }
   }
 
@@ -165,9 +171,12 @@
     }
   }
 
-  @include vp-1023 {
-    padding: 36px 22px;
+  @include vp-767 {
     margin-bottom: 16px;
+
+    .project & {
+      padding: 36px 22px;
+    }
   }
 }
 
@@ -195,7 +204,7 @@
     color: $color-default-black;
     bottom: 136px;
 
-    @include vp-1023 {
+    @include vp-767 {
       color: $color-medium-aquamarine;
       margin-right: 12px;
     }
@@ -244,7 +253,7 @@
     transform: none;
   }
 
-  @include vp-1023 {
+  @include vp-767 {
     display: inline-flex;
     position: static;
     padding: 12px 28px;

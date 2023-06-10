@@ -68,7 +68,7 @@
     order: 2;
   }
 
-  @include vp-1023 {
+  @include vp-767 {
     order: 1;
   }
 }
@@ -84,7 +84,7 @@
     align-self: auto;
   }
 
-  @include vp-1023 {
+  @include vp-767 {
     align-self: center;
     margin-bottom: 32px;
   }
@@ -105,7 +105,7 @@
     margin-bottom: 40px;
   }
 
-  @include vp-1023 {
+  @include vp-767 {
     display: block;
     order: 2;
   }

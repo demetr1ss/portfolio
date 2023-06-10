@@ -11,7 +11,7 @@
     margin-bottom: 60px;
   }
 
-  @include vp-1023 {
+  @include vp-767 {
     margin-bottom: 40px;
   }
 }
@@ -25,7 +25,7 @@
     margin-bottom: 0;
   }
 
-  @include vp-1023 {
+  @include vp-767 {
     display: block;
   }
 }
@@ -59,7 +59,7 @@
     margin-right: 12px;
   }
 
-  @include vp-1023 {
+  @include vp-767 {
     width: max-content;
     margin: 0;
   }

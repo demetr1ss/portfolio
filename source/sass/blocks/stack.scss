@@ -11,7 +11,7 @@
   text-align: center;
   max-height: 34px;
 
-  @include vp-1023 {
+  @include vp-767 {
     font-family: $ff-vela-sans;
     font-weight: 400;
     max-height: none;
