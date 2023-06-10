@@ -26,3 +26,59 @@
     }
   }
 }
+
+.stack__title {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    color: $color-lavender-blue;
+    padding-left: 24px;
+    margin: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/sprite.svg#tools-icon2");
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/sprite.svg#chevron");
+      transition: transform $trans-default;
+
+      /* stylelint-disable-next-line max-nesting-depth */
+      .block--opened & {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.stack__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 0;
+
+  @include vp-767 {
+    display: none;
+    padding-top: 20px;
+
+    .block--opened & {
+      display: block;
+    }
+  }
+}

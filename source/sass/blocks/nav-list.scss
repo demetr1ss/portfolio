@@ -1,36 +1,114 @@
+/* stylelint-disable max-nesting-depth */
 .nav-list {
   display: flex;
+  width: 100%;
+  padding-right: 32px;
+
+  @include vp-767 {
+    .nav--opened & {
+      display: block;
+      position: relative;
+      left: -16px;
+      top: -32px;
+      background: $color-medium-aquamarine;
+      border-radius: 0 0 24px 24px;
+      padding: 32px 16px;
+    }
+
+    .nav--closed & {
+      display: none;
+    }
+
+    .footer & {
+      padding-right: 0;
+    }
+  }
 }
 
 .nav-list__link {
   position: relative;
+  line-height: 100%;
 
   &::before {
     content: "";
     position: absolute;
     bottom: -2px;
+    left: 0;
     height: 2px;
     width: 100%;
     border-radius: 2px;
     background-color: $color-transparent;
     transition: background-color $trans-default;
   }
-}
 
-.nav-list__item {
   @include vp-767 {
-    .header & {
-      display: none;
+    .nav--opened & {
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 130%;
+      text-transform: uppercase;
+      color: $color-default-black;
     }
   }
 
+  .nav-list__item:last-child & {
+    position: relative;
+    padding-left: 24px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: calc(50% - 9px);
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/sprite.svg#download-icon");
+
+      @include vp-767 {
+        .header & {
+          top: calc(50% - 16px);
+          width: 32px;
+          height: 32px;
+          background-image: url("../img/sprite.svg#download-icon--pink");
+        }
+      }
+    }
+
+    @include vp-767 {
+      .header & {
+        padding-left: 38px;
+      }
+    }
+  }
+}
+
+.nav-list__item {
   @include hover-focus-active {
     .nav-list__link::before {
       background-color: currentColor;
+    }
+  }
+
+  &:last-child {
+    margin-left: auto;
+
+    .footer & {
+      margin-left: 0;
+    }
+
+    .header & {
+      @include vp-767 {
+        margin-top: 32px;
+      }
     }
   }
 }
 
 .nav-list__item:not(:last-child) {
   margin-right: 28px;
+
+  @include vp-767 {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
 }

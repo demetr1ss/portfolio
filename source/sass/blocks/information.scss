@@ -35,5 +35,18 @@
 }
 
 .information__pages {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
+
+  @include vp-767 {
+    padding-bottom: 20px;
+  }
+}
+
+.information__implementation {
+  @include vp-767 {
+    padding-top: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-dim-gray;
+    border-top: 1px solid $color-dim-gray;
+  }
 }

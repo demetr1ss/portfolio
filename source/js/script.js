@@ -1,6 +1,8 @@
 const skillsContainer = document.querySelector('.skills');
 const projectsContainer = document.querySelector('.projects');
 const footerSocialContainer = document.querySelector('.footer__socilal');
+const titles = document.querySelectorAll('.title');
+const toggleButton = document.querySelector('.nav__toggle');
 
 const scrollTo = (target) => {
   window.scrollTo({
@@ -49,3 +51,29 @@ const handleClick = () => scrollTo(skillsContainer);
 button.addEventListener('click', handleClick);
 
 window.addEventListener('scroll', scrollHandler);
+
+function titleClickHandler(e) {
+  const block = e.target.parentElement;
+
+  if (block.classList.contains('block--opened')) {
+    block.classList.remove('block--opened')
+  } else {
+    block.classList.add('block--opened')
+  }
+}
+
+titles.forEach((title) => {
+  title.addEventListener('click', titleClickHandler)
+})
+
+toggleButton?.addEventListener('click', (e) => {
+  const nav = e.target.parentElement;
+
+  if (nav.classList.contains('nav--closed')) {
+    nav.classList.remove('nav--closed');
+    nav.classList.add('nav--opened')
+  } else {
+    nav.classList.remove('nav--opened');
+    nav.classList.add('nav--closed');
+  }
+})

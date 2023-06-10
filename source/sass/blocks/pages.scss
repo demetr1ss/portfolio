@@ -16,6 +16,25 @@
     height: 18px;
     background-image: url("../img/sprite.svg#pages-icon");
   }
+
+  @include vp-767 {
+    margin-bottom: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/sprite.svg#chevron");
+      transition: transform $trans-default;
+
+      /* stylelint-disable-next-line max-nesting-depth */
+      .block--opened & {
+        transform: rotate(180deg);
+      }
+    }
+  }
 }
 
 .pages__description {
@@ -30,22 +49,30 @@
   text-transform: lowercase;
 
   @include vp-767 {
-    display: block;
+    display: none;
+    padding-top: 20px;
+
+    .block--opened & {
+      display: block;
+    }
   }
 }
 
-.pages__item:not(:last-child) {
-  position: relative;
-  padding-right: 26px;
+.pages__item {
+  &:not(:last-child) {
+    position: relative;
+    padding-right: 26px;
 
-  &::before {
-    position: absolute;
-    right: 12px;
-    content: ";";
+    &::before {
+      position: absolute;
+      right: 12px;
+      content: ";";
+    }
   }
 
   @include vp-767 {
     font-family: $ff-vela-sans;
+    font-size: 14px;
     font-weight: 400;
     max-height: none;
     border: none;

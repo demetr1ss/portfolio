@@ -8,6 +8,7 @@
   box-sizing: border-box;
   border: 2px solid $color-transparent;
   transition: background-color $trans-default, color $trans-default, border $trans-default;
+  min-width: 210px;
 
   @include hover-focus-active {
     background-color: $color-transparent;
@@ -24,6 +25,8 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 18px 18px;
+      z-index: 10;
+      min-width: auto;
     }
   }
 }
