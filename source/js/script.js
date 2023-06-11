@@ -28,27 +28,27 @@ const scrollHandler = () => {
   const scrollY = window.scrollY || document.documentElement.scrollTop;
 
   if (scrollY < 100 || inViewport(footerSocialContainer)) {
-    button.classList.remove(hideButtonClass);
+    button?.classList.remove(hideButtonClass);
   }
 
   if (scrollY > 100 && !inViewport(footerSocialContainer)) {
-    button.classList.add(hideButtonClass);
+    button?.classList.add(hideButtonClass);
   }
 
   if (inViewport(footerSocialContainer)) {
-    button.classList.add(rotateButtonClass);
-    button.removeEventListener('click', handleClick);
-    button.addEventListener('click', () => scrollTo(document.body));
+    button?.classList.add(rotateButtonClass);
+    button?.removeEventListener('click', handleClick);
+    button?.addEventListener('click', () => scrollTo(document.body));
   } else {
-    button.classList.remove(rotateButtonClass);
-    button.removeEventListener('click', () => scrollTo(document.body));
-    button.addEventListener('click', handleClick);
+    button?.classList.remove(rotateButtonClass);
+    button?.removeEventListener('click', () => scrollTo(document.body));
+    button?.addEventListener('click', handleClick);
   }
 };
 
 const button = document.querySelector('.page-hero__link');
 const handleClick = () => scrollTo(skillsContainer);
-button.addEventListener('click', handleClick);
+button?.addEventListener('click', handleClick);
 
 window.addEventListener('scroll', scrollHandler);
 
@@ -56,24 +56,43 @@ function titleClickHandler(e) {
   const block = e.target.parentElement;
 
   if (block.classList.contains('block--opened')) {
-    block.classList.remove('block--opened')
+    block.classList.remove('block--opened');
   } else {
-    block.classList.add('block--opened')
+    block.classList.add('block--opened');
   }
 }
 
 titles.forEach((title) => {
-  title.addEventListener('click', titleClickHandler)
-})
+  title.addEventListener('click', titleClickHandler);
+});
 
 toggleButton?.addEventListener('click', (e) => {
-  const nav = e.target.parentElement;
+  const nav = e.target?.parentElement;
 
-  if (nav.classList.contains('nav--closed')) {
-    nav.classList.remove('nav--closed');
-    nav.classList.add('nav--opened')
-  } else {
+  const closeMenu = () => {
     nav.classList.remove('nav--opened');
     nav.classList.add('nav--closed');
+    window.removeEventListener('click', outsideClickListener);
+  };
+
+  const openMenu = () => {
+    nav.classList.remove('nav--closed');
+    nav.classList.add('nav--opened');
+    window.addEventListener('click', outsideClickListener);
+  };
+
+  function outsideClickListener(event) {
+    var target = event.target;
+
+    if (nav.contains(target)) {
+    } else {
+      closeMenu();
+    }
   }
-})
+
+  if (nav.classList.contains('nav--closed')) {
+    openMenu();
+  } else {
+    closeMenu();
+  }
+});
